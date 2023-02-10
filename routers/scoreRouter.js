@@ -1,5 +1,5 @@
 const { Router } = require("express");
-const { scoreHandler } = require("../Api/scoreHandler");
+const { scoreHandler } = require("../api/scoreHandler");
 const scoreRouter = new Router();
 
 scoreRouter.get("/", scoreHandler.getHighestScore);
