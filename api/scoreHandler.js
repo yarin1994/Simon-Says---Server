@@ -16,7 +16,7 @@ exports.scoreHandler = {
             score: docs[0].score,
             request: {
               Method: "GET",
-              url: "http://localhost:5001/api/scores"+req.query.email,
+              url: "https://simon-says-6knm.onrender.com"+req.query.email,
             },
           });
         } else {
@@ -48,7 +48,7 @@ exports.scoreHandler = {
           score: docs.score,
           request: {
             Method: "PUT",
-            url: "http://localhost:5001/api/scores",
+            url: "https://simon-says-6knm.onrender.com",
           },
         })
       )
@@ -89,7 +89,7 @@ exports.scoreHandler = {
                 score: result.score,
                 request: {
                   Method: "POST",
-                  url: "http://localhost:5001/api/scores/login" + result._id,
+                  url: "https://simon-says-6knm.onrender.com" + result._id,
                 },
               });
             })
