@@ -1,5 +1,5 @@
 const { default: mongoose } = require("mongoose");
-const Score = require("../db/scoreSchema");
+const Score = require("../DB/scoreSchema");
 
 // Returns the highest score of the signed in user
 // Method: GET

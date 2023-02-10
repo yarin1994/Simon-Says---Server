@@ -6,7 +6,7 @@ const port = process.env.BACKEND_PORT || 4000;
 const app = express();
 
 // Import mongoose database connection
-const Database = require("./db/DBconnection");
+const Database = require("./DB/DBconnection");
 
 // Parsing body and url
 app.use(express.json());
